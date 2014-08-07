@@ -1,0 +1,23 @@
+{% include "header.tmpl" %}
+<style type="text/css">
+#pageheader{
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:600px;
+  height:60px;
+  margin:-30px 0 0 -250px;
+}
+#pageheader input{
+  margin:0 10px;
+}
+</style>
+<script type="text/javascript">
+jQuery(function($){
+  var pos = $('#pageheader').offset();
+  pos.top -= 100;
+  pos.left += 100;
+  $('<h1>团购搜</h1>').insertBefore('#pageheader').offset(pos);
+});
+</script>
+{% include "footer.tmpl" %}

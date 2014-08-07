@@ -1,0 +1,29 @@
+<deals>
+	<data>
+		<deal>
+			<city_name></city_name>
+			<city_id></city_id>
+			<city_url></city_url>
+			<deal_id>EsteeLauder1225</deal_id>
+			<deal_name>雅诗兰黛红石榴</deal_name>
+			<deal_title>美梦成真，雅诗兰黛红石榴系列全正装套装，美团网免费送</deal_title>
+			<deal_cate></deal_cate>
+			<deal_subcate></deal_subcate>
+			<deal_url>http://www.meituan.com/deal/EsteeLauder1225.html</deal_url>
+			<deal_img>http://p1.meituan.net/275.168/deal/__30873588__4285935.jpg</deal_img>
+			<deal_desc><![CDATA[美梦成真：雅诗兰黛红石榴系列全正装套装（洁面乳＋精粹水＋精粹油＋日霜＋晚霜＋面膜），美团网免费送！强抗氧，深排浊，给肌肤一个渐养渐好、鲜活欲滴的未来。邀请1个新用户参加或绑定腾讯/新浪微博多1个抽奖号码，中奖概率翻倍！]]></deal_desc>
+			<start_time>1387900800</start_time>
+			<end_time>1388419199</end_time>
+			<deal_tips><![CDATA[活动日期：12月25日-12月30日; 开奖日期：12月31日抽出1名幸运会员; 开奖期间请务必保持手机畅通; 美团网员工照例不能参与抽奖，美团网员工的美梦都会成真的; 踊跃参与就有机会，邀请1个新用户参加或绑定腾讯/新浪微博多1个抽奖号码，中奖概率翻倍！; 请关注美梦成真官方博客和官方微博，所有开奖颁奖信息都会第一时间在我们的官方博客和官方微博发布; ]]></deal_tips>
+		</deal>
+		<shops>
+			<shop>
+				<shop_name>美团网（抽奖单专用门店）</shop_name>
+				<shop_tel>400-660-5335</shop_tel>
+				<shop_addr>朝阳区美团网是中国最早、最大、口碑最好的团购网站。目前，美团网的服务遍及中国各主要城市，通过美团，你能够以低至1折的价格享受高品质的美食、娱乐休闲、婚纱摄影、美容美发等各种本地消费。</shop_addr>
+				<shop_area>北苑家园</shop_area>
+				<shop_city>北京</shop_city>
+			</shop>
+		</shops>
+	</data>
+</deals>

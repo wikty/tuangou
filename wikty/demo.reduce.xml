@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<response code="0" date="2013-12-25T15:05:01+08:00" message="Ok">
+<deals>
+<data>
+<deal>
+<deal_more_img>http://p0.meituan.net/deal/__23180948__5760276.jpg, http://p0.meituan.net/deal/__23180948__7673357.jpg, http://p0.meituan.net/deal/__23180950__2288806.jpg, http://p0.meituan.net/deal/__23180952__6759202.jpg, http://p0.meituan.net/deal/__23180953__8895271.jpg</deal_more_img>
+<destination />
+<city_name>杭州</city_name>
+<city_id>hangzhou</city_id>
+<city_url>http://hz.meituan.com</city_url>
+<deal_id>8180875</deal_id>
+<deal_title>滋补榴莲鸡3-4人餐，滋补养生，丝丝鲜甜</deal_title>
+<deal_url>http://hz.meituan.com/deal/8180875.html</deal_url>
+<deal_img>http://p0.meituan.net/275.168/deal/__23194836__6609385.jpg</deal_img>
+<deal_cate>美食</deal_cate>
+<deal_subcate>火锅</deal_subcate>
+<deal_desc>滋补养生，丝丝鲜甜。仅售110元！价值186元的一席地滋补榴莲鸡3-4人餐。水果皇后与滋补鸡窝的结合，这鲜香滋味，第一口就会爱上！杭城16店通用~</deal_desc>
+<price>110</price>
+<refund>1</refund>
+<sales_num>3945</sales_num>
+<is_post>no</is_post>
+<start_time>1380384000</start_time>
+<end_time>1391148000</end_time>
+<coupon_end_time>1391183999</coupon_end_time>
+<deal_tips>有效期：2013.9.29 至 2014.1.31（周末、法定节假日通用）使用时间：10:00-24:00预约提醒：无需预约，消费高峰时可能需要等位使用规则：每张美团券建议3至4人使用; 不提供餐巾纸; 店内无包间; 仅限堂食，不提供餐前外带，餐毕未吃完可打包，需到店另付打包费1元/盒; 团购用户不可同时享受商家其他优惠; 酒水饮料等问题，请致电商家咨询，以商家反馈为准; </deal_tips>
+<deal_range>大关,文二路沿线,西湖北线/黄龙,平海路,文二路沿线,朝晖地区,下城区,文一路沿线,古墩路沿线,湖滨,庆春路沿线,朝晖地区,古墩路沿线,彩虹城,三墩镇,余杭区</deal_range>
+<deal_lng>120.185971</deal_lng>
+<deal_name>一席地3-4人餐</deal_name>
+<deal_phones>0571-88184969,0571-89935983,0571-88502979,0571-88952599,0571-86612025,0571-85238982,0571-87297849,0571-89923120,0571-88310891,0571-87631961,0571-88836625,0571-88972523,0571-87189123,0571-87755675,0571-87065051,0571-88824961</deal_phones>
+<deal_roomtime />
+</deal>
+</data>
+</deals>
+</response>
