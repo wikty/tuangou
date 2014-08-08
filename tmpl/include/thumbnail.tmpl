@@ -1,0 +1,21 @@
+<ul class="thumbnails row-fluid">
+	<div class="row-fluid">
+	{% for deal in deals %}
+		<li class="span3">
+			<div class="thumbnail">
+				<a href="{{ deal['deal_url'] }}"><img src="{{ deal['deal_img'] }}"/></a>
+				<h4 class="media-heading">{{ deal['deal_name'] }}</h4>
+				<p>
+					<span class="muted">开始：{{ deal['start_time']}}</span>
+					<span class="muted">结束：{{ deal['end_time'] }}</span>
+					<br/>
+					<span class="">原价：{{ deal['value'] }}</span>
+					<span class="">现价：{{ deal['price'] }}</span>
+					<span class="">折扣：{{ deal['rebate'] }}</span>
+				</p>
+				<p>{{ deal['deal_title'] }}</p>
+				<p><a href="{{ deal['deal_url'] }}" class="btn">了解更多</a></p>
+			</div>
+		</li>
+	{% endfor %}
+</ul>

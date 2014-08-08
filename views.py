@@ -32,6 +32,7 @@ class KeywordsHandler(tornado.web.RequestHandler):
 class QueryHandler(tornado.web.RequestHandler):
 	def get(self):
 		item = self.get_argument('item', None)
+		
 		nofound = True
 		mystr = u''
 		# mystr = u'<div class="ui-widget"><form action="/query" method="get">
