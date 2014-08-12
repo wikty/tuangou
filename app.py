@@ -1,15 +1,15 @@
-import tornado.web.Application
+import tornado.web
 
-from cfg import TMPL_DEFAULT_VARS
-from views import IndexHandler, KeywordsHandler, QueryHandler, StaticHandler
+from tornado.web import URLSpec
+
+from cfg import SETTINGS
+from views import IndexHandler, KeywordsHandler, QueryHandler
 
 class Application(tornado.web.Application):
 	def __init__(self):
 		handlers = [
-			(TMPL_DEFAULT_VARS['index_url'], IndexHandler),
-			(TMPL_DEFAULT_VARS['keywords_url'], KeywordsHandler),
-			(TMPL_DEFAULT_VARS['query_url'], QueryHandler),
-			(TMPL_DEFAULT_VARS['static_url']+r'/(.*)', StaticHandler)
+		    URLSpec(r'/', IndexHandler, name='index_url'),
+		    URLSpec(r'/keywords', KeywordsHandler, name='keywords_url'),
+		    URLSpec(r'/query', QueryHandler, name='query_url')
 		]
-		settings = dict()
-		tornado.web.Application.__init__(self, handlers, settings)
+		tornado.web.Application.__init__(self, handlers, **SETTINGS)

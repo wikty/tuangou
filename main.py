@@ -7,10 +7,11 @@ from server import run
 
 # initialize environment
 if sys.getdefaultencoding() != SYS_ENCODING:
+    reload(sys)  # after reload sys, sys has attribute setdefaultencoding
     sys.setdefaultencoding(SYS_ENCODING)
-    reload(sys)
+    
 # define tornado server listen port
-define("port", default=3000, type=int)
+define("port", default=5000, type=int)
 
 if __name__ == '__main__':
 	run()
