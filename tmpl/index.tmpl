@@ -1,3 +1,12 @@
-{% include "include/header.tmpl" %}
+{% extends "base.tmpl" %}
+{% block content %}
 
-{% include "include/footer.tmpl" %}
+<div id="homesearch">
+    <h2>{{ handler.settings['site_name'] }}</h2>
+    <form action="{{ handler.reverse_url('query_url') }}">
+      <p>
+        <input type="text" class="input-large" name="item" id="search" autocomplete="off" autofocus="on" />
+        <button type="submit" class="btn">查找</button>
+    </form>
+</div>
+{% end %}
