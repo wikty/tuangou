@@ -1,0 +1,70 @@
+html,
+body {
+  /* document fill the total viewport in vertical */
+  height: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Wrapper for pageheader and pagecontent */
+#pagewrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;  /* -60px space for footer */
+  padding-top: 60px;   /* 60px space for pageheader(navbar-fixed-top) */
+}
+
+/* footerspace in pagewrapper bottom as placeholder for pagefooter*/
+#footerspace,
+#pagefooter {
+  height: 60px;
+}
+
+#pagefooter {
+  background-color: #f5f5f5;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #pagefooter {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+#pagefooter .contianer{
+  width:auto;
+  max-width:680px;
+  margin-top:15px;
+}
+#pagefooter .contianer .credit{
+  margin:20px 0;
+}
+
+@media(max-width:980px){
+  /*enable use of floated navbar text*/
+  .navbar-text.pull-right{
+    float:none;
+    padding-left:5px;
+    padding-right:5px;
+  }
+}
+
+.ui-autocomplete.ui-menu{
+  list-style:none;
+  background-color:#f5f5f5;
+  margin:0;
+  padding:0;
+  width:300px;
+  height:500px;
+  overflow: scroll;
+}
+
+.ui-helper-hidden-accessible{
+  display:none;
+}
