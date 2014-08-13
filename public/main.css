@@ -68,3 +68,20 @@ body {
 .ui-helper-hidden-accessible{
   display:none;
 }
+
+#homesearch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 200px;
+  margin: -100px 0 0 -200px;
+}
+
+#homesearch h2 {
+  text-align: center;
+}
+
+#homesearch form #search {
+  margin-left: 20%;
+}
