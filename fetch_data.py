@@ -12,13 +12,13 @@ from cfg import DATA_FILE, SITES, CITYS
 
 sched = BlockingScheduler()
 
-@sched.scheduled_job('cron', day_of_week='0-6', hour='3-5')
+#@sched.scheduled_job('cron', day_of_week='0-6', hour='3-5')
 def fetch_data():
     for city in CITYS:
         for site, url in SITES.items():
             fetch(url.format(city=city), city, site)
 
-sched.start()
+#sched.start()
 
 def fetch(url, city, site):
     reserved_fields = [
