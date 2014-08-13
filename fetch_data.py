@@ -1,16 +1,18 @@
 import os
-import shelve
 
 from contextlib import closing
 from xml.etree.ElementTree import fromstring
 
+import sqlite3dbm
 import tornado.httpclient
 
-from apscheduler.schedulers.blocking import BlockingScheduler
+# Heroku charge for clock, so drop this function
+#from apscheduler.schedulers.blocking import BlockingScheduler
 
 from cfg import DATA_FILE, SITES, CITYS
 
-sched = BlockingScheduler()
+#sched = BlockingScheduler()
+
 
 #@sched.scheduled_job('cron', day_of_week='0-6', hour='3-5')
 def fetch_data():
@@ -47,7 +49,7 @@ def fetch(url, city, site):
     print("Downloading Is Finished")
     print('')
     print('Parsing Data...')
-    with closing(shelve.open(DATA_FILE, writeback=True)) as s:
+    with closing(sqlite3dbm.sshelve.open(DATA_FILE, writeback=True)) as s:
         if not s.has_key(city):
             s[city] = {'keywords': []}
         deals_node = fromstring(http_response.body).find('deals')
