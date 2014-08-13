@@ -1,9 +1,9 @@
 # -*- coding: UTF-8 –*-
 import re
 import json
-import shelve
 
 import tornado.web
+import sqlite3dbm
 
 from cfg import DATA_FILE
 from utils import content_rank
@@ -15,7 +15,7 @@ class IndexHandler(tornado.web.RequestHandler):
 
 class KeywordsHandler(tornado.web.RequestHandler):
     def initialize(self):
-        self.db = shelve.open(DATA_FILE)
+        self.db = sqlite3dbm.sshelve.open(DATA_FILE)
     def on_finish(self):
         self.db.close()
     def get(self):
@@ -27,7 +27,7 @@ class KeywordsHandler(tornado.web.RequestHandler):
 
 class QueryHandler(tornado.web.RequestHandler):
     def initialize(self):
-        self.db = shelve.open(DATA_FILE)
+        self.db = sqlite3dbm.sshelve.open(DATA_FILE)
     def on_finish(self):
         self.db.close()
     def get(self):
