@@ -15,7 +15,7 @@ if sys.getdefaultencoding() != SYS_ENCODING:
 
 # define tornado server listen port
 if 'PRODUCTION' in os.environ:
-    define('port', default=os.environ['PORT'], type=int)
+    define('port', default=int(os.environ['PORT']), type=int)
 else:
     define("port", default=5000, type=int)
 
